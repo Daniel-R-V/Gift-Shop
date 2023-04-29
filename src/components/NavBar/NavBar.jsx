@@ -1,8 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
-// import logo from "../../images/logo.png"
 import "./navbar.css"
-import { GoGift } from "react-icons/go"
+import { IoGift } from "react-icons/io5"
 
 function Navbar() {
     const [sticky, setSticky] = useState(false)
@@ -31,13 +30,13 @@ function Navbar() {
                     <div className={`nav-container ${sticky ? "nav-sticky" : ""}`}>
                         <div className="logo-container">
                             <Link to="/">
-                                <GoGift className="logo" />
+                                <IoGift className="logo" />
                             </Link>
                             <span className="logo-title">Gifts</span>
                         </div>
                         <div className="nav-links">
-                            <Link onClick={scrollToTop} to="/products">
-                                Products
+                            <Link onClick={scrollToTop} to="/categories/all">
+                                Categories
                             </Link>
                             <Link onClick={scrollToTop} to="/about">
                                 About
