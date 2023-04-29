@@ -1,0 +1,35 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-products {
+    flex-grow: 1;
+    margin-top: 10rem;
+    width: 58rem;
+    height: 64rem;
+    border-radius: 30px;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+.right-images {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-electronics {
+    margin-top: 10rem;
+    width: 37rem;
+    height: 36rem;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.image-jewelry {
+    margin-top: 1rem;
+    width: 37rem;
+    height: 27rem;
+    border-radius: 30px;
+    cursor: pointer;
+}

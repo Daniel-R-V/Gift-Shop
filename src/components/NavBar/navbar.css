@@ -1,14 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
 .navbar {
-    border-bottom: 1.4px solid rgba(0, 0, 0, 0.2);
-    background-color: white;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
     font-family: "Montserrat", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .nav-container {
@@ -17,22 +15,40 @@
     justify-content: flex-start;
     height: 6rem;
     transition: height 0.1s linear;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    border-bottom: 1.4px solid rgba(0, 0, 0, 0.2);
 }
 
 .nav-container.nav-sticky {
     height: 8rem !important;
 }
 
-.logo {
-    width: 5rem;
-    height: 5rem;
+.logo-container {
+    display: flex;
+    align-items: center;
     margin-right: 5rem;
+}
+
+.logo-container h6 {
+    font-size: 2rem;
+}
+
+.logo {
+    width: 3rem;
+    height: 3rem;
+    color: black;
+}
+
+.logo-title {
+    font-size: 20px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: black;
     margin: 2rem;
+    font-weight: 400;
 }
 
 .nav-links a:hover {

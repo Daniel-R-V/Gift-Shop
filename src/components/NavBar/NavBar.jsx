@@ -1,7 +1,8 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import logo2 from "../../images/logo2.jpg"
+// import logo from "../../images/logo.png"
 import "./navbar.css"
+import { GoGift } from "react-icons/go"
 
 function Navbar() {
     const [sticky, setSticky] = useState(false)
@@ -28,9 +29,12 @@ function Navbar() {
             <nav className="navbar">
                 <div className="container">
                     <div className={`nav-container ${sticky ? "nav-sticky" : ""}`}>
-                        <Link to="/">
-                            <img onClick={scrollToTop} src={logo2} alt="logo gift shop" className="logo" />
-                        </Link>
+                        <div className="logo-container">
+                            <Link to="/">
+                                <GoGift className="logo" />
+                            </Link>
+                            <span className="logo-title">Gifts</span>
+                        </div>
                         <div className="nav-links">
                             <Link onClick={scrollToTop} to="/products">
                                 Products
