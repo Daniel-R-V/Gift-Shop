@@ -46,6 +46,10 @@ function Navbar() {
                                 FAQ
                             </Link>
                         </div>
+                        <div className="auth-container">
+                            <span className="login">Login</span>
+                            <span className="sign-up">Sign Up</span>
+                        </div>
                     </div>
                 </div>
             </nav>

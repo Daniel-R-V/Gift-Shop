@@ -54,3 +54,33 @@
 .nav-links a:hover {
     text-decoration: underline;
 }
+
+.auth-container {
+    margin-left: 39rem;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.login {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 2;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.sign-up {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
