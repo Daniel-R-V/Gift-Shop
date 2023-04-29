@@ -1,12 +1,12 @@
 import "./App.css"
-import { Home } from "./components/Home/Home"
-import { NavBar } from "./components/NavBar/NavBar"
-import { Footer } from "./components/Footer/Footer"
+import Home from "./components/Home/Home.jsx"
+import Navbar from "./components/Navbar/Navbar.jsx"
+import Footer from "./components/Footer/Footer.jsx"
 
 function App() {
     return (
         <div className="app-container">
-            <NavBar />
+            <Navbar />
             <Home />
             <Footer />
         </div>
