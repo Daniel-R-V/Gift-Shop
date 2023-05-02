@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
 .underFifty {
     padding-bottom: 10rem;
 }
@@ -15,6 +17,7 @@
     font-size: 2.6rem;
     font-weight: 600;
     margin-bottom: 4.2rem !important;
+    font-family: "Montserrat", sans-serif;
 }
 
 .row-container {
@@ -52,6 +55,7 @@
     width: 4rem;
     cursor: pointer;
     transition: all 0.1s ease-in;
+    border-radius: 8px;
 }
 
 .btns-container {
