@@ -1,7 +1,6 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import "./navbar.css"
-// import { IoGift } from "react-icons/io5"
 import logo from "../../images/logo.png"
 
 function Navbar() {
@@ -31,7 +30,6 @@ function Navbar() {
                     <div className={`nav-container ${sticky ? "nav-sticky" : ""}`}>
                         <div className="logo-container">
                             <Link to="/">
-                                {/* <IoGift className="logo" /> */}
                                 <img src={logo} className="logo" />
                             </Link>
                         </div>
