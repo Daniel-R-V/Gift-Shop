@@ -5,7 +5,7 @@
 
 .image-products {
     flex-grow: 1;
-    margin-top: 10rem;
+    margin-top: 9rem;
     width: 58rem;
     height: 64rem;
     border-radius: 30px;
@@ -19,7 +19,7 @@
 }
 
 .image-electronics {
-    margin-top: 10rem;
+    margin-top: 9rem;
     width: 37rem;
     height: 36rem;
     border-radius: 30px;

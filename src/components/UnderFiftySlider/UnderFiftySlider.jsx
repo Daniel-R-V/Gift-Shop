@@ -19,13 +19,9 @@ function UnderFiftySlider() {
             <div className="underFifty-container">
                 <div className="title-btns">
                     <h3>Products under $50</h3>
-                    <div className="btns">
-                        {/* <button title="scroll left" onClick={slideLeft}> */}
-                        <BsFillArrowLeftSquareFill title="scroll left" onClick={slideLeft} />
-                        {/* </button> */}
-                        {/* <button title="scroll right" onClick={slideRight}> */}
-                        <BsFillArrowRightSquareFill title="scroll right" onClick={slideRight} />
-                        {/* </button> */}
+                    <div className="btns-container">
+                        <BsFillArrowLeftSquareFill title="scroll left" onClick={slideLeft} className="btns" />
+                        <BsFillArrowRightSquareFill title="scroll right" onClick={slideRight} className="btns" />
                     </div>
                 </div>
                 <div className="row-container" id="slider">
