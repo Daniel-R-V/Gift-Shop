@@ -3,7 +3,7 @@ import products from "../images/products.png"
 import electronics from "../images/electronics.png"
 import jewelry from "../images/jewelry.png"
 import "./home.css"
-import UnderFiftyProducts from "../components/UnderFiftyProducts/UnderFiftyProducts"
+import UnderFiftySlider from "../components/UnderFiftySlider/UnderFiftySlider"
 
 function Home() {
     return (
@@ -21,7 +21,7 @@ function Home() {
                     </Link>
                 </div>
             </div>
-            <UnderFiftyProducts />
+            <UnderFiftySlider />
         </>
     )
 }

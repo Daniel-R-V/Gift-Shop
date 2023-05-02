@@ -1,0 +1,20 @@
+.btns button {
+    color: white;
+    background-color: #373737;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+.btns {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.btns button:hover {
+    background-color: black;
+}
