@@ -10,8 +10,8 @@
     outline: 2px solid rgba(0, 0, 0, 0.6);
 }
 
-.product-header {
-    width: 21rem;
+.product-header img {
+    max-width: 21rem;
 }
 
 .product-details {
@@ -19,9 +19,12 @@
 }
 
 .product-title {
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: black;
     font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .product-price {
@@ -29,6 +32,7 @@
     color: black;
     font-weight: bold;
 }
+
 a {
     text-decoration: none;
 }

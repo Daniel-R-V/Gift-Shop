@@ -21,7 +21,7 @@ function UnderFiftyProduct() {
                 <div key={product.id} className="underFiftyProducts-container">
                     <Link onClick={() => window.top(0, 0)} to={`/categories/products/${product.id}`}>
                         <div className="product-header">
-                            <img src={product.image} alt={`image product ${product.id}`} />
+                            <img className="product-image" src={product.image} alt={`image product ${product.id}`} />
                         </div>
                         <div className="product-details">
                             <p className="product-title">{product.title}</p>
