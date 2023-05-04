@@ -7,3 +7,12 @@
 .row-item:hover {
     outline: 2px solid rgba(0, 0, 0, 0.6);
 }
+
+.product-header {
+    width: 21rem;
+}
+
+.product-details {
+    font-size: 1.7rem;
+    padding: 1rem;
+}

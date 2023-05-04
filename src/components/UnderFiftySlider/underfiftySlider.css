@@ -2,6 +2,8 @@
 
 .underFifty {
     padding-bottom: 10rem;
+    margin-top: 3rem;
+    /* max-width: 1200px; */
 }
 
 .product-header img {
@@ -46,13 +48,10 @@
 }
 
 .btns {
-    color: white;
-    background-color: #373737;
-    padding: 1rem;
-    font-size: 1.5rem;
-    border: none;
-    height: 4rem;
-    width: 4rem;
+    background-color: white;
+    color: #373737;
+    height: 3rem;
+    width: 3rem;
     cursor: pointer;
     transition: all 0.1s ease-in;
     border-radius: 8px;
@@ -64,5 +63,5 @@
 }
 
 .btns:hover {
-    background-color: black;
+    color: black;
 }

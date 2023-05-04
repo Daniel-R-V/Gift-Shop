@@ -16,7 +16,7 @@ function UnderFiftySlider() {
 
     return (
         <div className="underFifty">
-            <div className="underFifty-container">
+            <div className="container">
                 <div className="title-btns">
                     <h3>Products under $50</h3>
                     <div className="btns-container">
