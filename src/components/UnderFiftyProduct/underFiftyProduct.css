@@ -1,10 +1,12 @@
-.row-item {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+.underFiftyProducts-container {
     outline: 2px solid rgba(0, 0, 0, 0.205);
     cursor: pointer;
     transition: all 0.15s ease-in;
 }
 
-.row-item:hover {
+.underFiftyProducts-container:hover {
     outline: 2px solid rgba(0, 0, 0, 0.6);
 }
 
@@ -13,6 +15,20 @@
 }
 
 .product-details {
-    font-size: 1.7rem;
     padding: 1rem;
+}
+
+.product-title {
+    font-size: 1.4rem;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+}
+
+.product-price {
+    font-size: 1.8rem;
+    color: black;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
 }

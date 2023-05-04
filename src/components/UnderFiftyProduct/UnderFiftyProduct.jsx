@@ -25,7 +25,7 @@ function UnderFiftyProduct() {
                         </div>
                         <div className="product-details">
                             <p className="product-title">{product.title}</p>
-                            <p className="product-price">${product.price}</p>
+                            <p className="product-price">{product.price}$</p>
                         </div>
                     </Link>
                 </div>
