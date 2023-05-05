@@ -52,12 +52,13 @@
 }
 
 .auth-container {
-    margin-left: 46rem;
+    margin-left: 45.5rem;
     background-color: white;
     display: inline-block;
     position: relative;
     padding: 10px;
     border-radius: 30px;
+    border: 1px solid black;
 }
 
 .login {

@@ -4,6 +4,8 @@
     outline: 2px solid rgba(0, 0, 0, 0.205);
     cursor: pointer;
     transition: all 0.15s ease-in;
+    height: 40rem;
+    font-family: "Montserrat", sans-serif;
 }
 
 .underFiftyProducts-container:hover {
@@ -12,6 +14,7 @@
 
 .product-header img {
     max-width: 21rem;
+    padding: 4rem 4rem 4rem 4rem;
 }
 
 .product-details {
@@ -21,10 +24,9 @@
 .product-title {
     font-size: 1rem;
     color: black;
-    font-family: "Montserrat", sans-serif;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    white-space: initial;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .product-price {

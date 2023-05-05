@@ -12,12 +12,13 @@ function UnderFiftyProduct() {
         })
     }, [])
 
-    const underFiftyProducts = products.filter((product) => product.price < 50)
+    const underFiftyProducts = products.filter((product) => product.price < 100)
+    const underFiftyProductsSorted = underFiftyProducts.sort(() => Math.random() - 0.5)
     console.log(underFiftyProducts)
 
     return (
         <>
-            {underFiftyProducts.map((product) => (
+            {underFiftyProductsSorted.map((product) => (
                 <div key={product.id} className="underFiftyProducts-container">
                     <Link onClick={() => window.top(0, 0)} to={`/categories/products/${product.id}`}>
                         <div className="product-header">
