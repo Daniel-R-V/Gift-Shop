@@ -53,7 +53,6 @@
     width: 3rem;
     cursor: pointer;
     transition: all 0.1s ease-in;
-    border-radius: 8px;
 }
 
 .btns-container {
