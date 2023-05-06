@@ -9,6 +9,7 @@ import Men from "./components/Categories/Men/Men"
 import Women from "./components/Categories/Women/Women"
 import Jewelry from "./components/Categories/Jewelry/Jewelry"
 import { Route, Routes } from "react-router-dom"
+import ProductPage from "./components/ProductPage/ProductPage"
 
 function App() {
     return (
@@ -19,11 +20,12 @@ function App() {
 
                 <Route path="categories" element={<Categories />}>
                     <Route path="all" element={<All />} />
-                    <Route path="all" element={<Electronics />} />
-                    <Route path="all" element={<Men />} />
-                    <Route path="all" element={<Women />} />
-                    <Route path="all" element={<Jewelry />} />
+                    <Route path="electronics" element={<Electronics />} />
+                    <Route path="men" element={<Men />} />
+                    <Route path="women" element={<Women />} />
+                    <Route path="jewelery" element={<Jewelry />} />
                 </Route>
+                <Route path="categories/product/:id" element={<ProductPage />} />
             </Routes>
             <Footer />
         </div>
