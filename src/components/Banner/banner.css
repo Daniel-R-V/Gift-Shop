@@ -3,16 +3,8 @@
 .banner-container {
     display: flex;
     justify-content: space-between;
-    height: 40rem;
+    height: 34rem;
     overflow: hidden;
-}
-
-.banner-container-reverse {
-    display: flex;
-    justify-content: space-between;
-    height: 40rem;
-    overflow: hidden;
-    flex-direction: row-reverse;
 }
 
 .banner {
@@ -26,13 +18,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 4rem;
+    padding: 0 6rem;
     background-color: #f4b183;
     font-family: "Montserrat", sans-serif;
 }
 
 .text-side h2 {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
 }
@@ -62,7 +54,7 @@
 .text button {
     background-color: black;
     color: white;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     font-weight: bold;
     padding: 1rem;
     text-transform: uppercase;
