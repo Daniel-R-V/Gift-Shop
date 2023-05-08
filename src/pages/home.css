@@ -8,7 +8,7 @@
     margin-top: 9rem;
     width: 58rem;
     height: 64rem;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     margin-right: 1.5rem;
     cursor: pointer;
 }
@@ -22,7 +22,7 @@
     margin-top: 9rem;
     width: 37rem;
     height: 36rem;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     cursor: pointer;
 }
 
@@ -30,6 +30,6 @@
     margin-top: 1rem;
     width: 37rem;
     height: 27rem;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     cursor: pointer;
 }

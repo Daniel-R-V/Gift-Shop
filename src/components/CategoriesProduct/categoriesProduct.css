@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+.categoriesProduct-container {
+    padding: 11rem 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.product {
+    outline: 2px solid rgba(0, 0, 0, 0.205);
+    outline-offset: -2px;
+    transition: all 0.15s ease-in;
+    cursor: pointer;
+}
+
+.product:hover {
+    outline: 2px solid rgba(0, 0, 0, 0.7);
+}
+
+.product-details {
+    font-size: 1.4rem;
+    padding: 1rem;
+    color: black;
+}
+
+.product-price {
+    font-size: 1.8rem;
+    margin-top: 1.4rem;
+    font-weight: 600;
+}
