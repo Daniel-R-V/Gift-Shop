@@ -13,7 +13,7 @@ function CategoriesHeader() {
             <div className="container">
                 <div className="catego-header">
                     <div className="title-home">
-                        <Link onClick={() => window.scrollTo(0, 0)} to="/">
+                        <Link className="home" onClick={() => window.scrollTo(0, 0)} to="/">
                             <i className="fa-solid fa-angle-left"></i> Home
                         </Link>
                         <h3>{btnName}</h3>
