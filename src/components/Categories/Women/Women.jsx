@@ -1,3 +1,14 @@
-function Womens() {}
+import "./women.css"
+import CategoriesWomen from "../../CategoriesWomen/CategoriesWomen"
+import Footer from "../../Footer/Footer"
 
-export default Womens
+function Women() {
+    return (
+        <>
+            <CategoriesWomen />
+            <Footer />
+        </>
+    )
+}
+
+export default Women
