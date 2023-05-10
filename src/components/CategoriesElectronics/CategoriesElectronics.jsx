@@ -1,25 +1,25 @@
-import "./categoriesProduct.css"
-import { useEffect, useState } from "react"
+import { useState, useEffect } from "react"
+import "./categoriesElectronics.css"
 import { getAllProducts } from "../../api/getAllProducts"
 import { Link } from "react-router-dom"
 
-function CategoriesProduct() {
+function CategoriesElectronics() {
     const [products, setProducts] = useState([])
 
     useEffect(() => {
-        getAllProducts().then((response) => {
-            setProducts(response)
-        })
-    }, [products])
+        getAllProducts().then((response) => setProducts(response))
+    }, [])
+
+    const filteredProducts = products.filter((product) => product.category === "electronics")
 
     return (
         <>
-            <div className="categoriesProduct-container">
+            <div className="product-container">
                 <div className="container">
                     <div className="products-grid">
-                        {products.map((product) => (
-                            <div key={product.id} className="product">
-                                <Link onClick={() => window.top(0, 0)} to={`/categories/product/${product.id}`}>
+                        {filteredProducts.map((product) => (
+                            <div key={product.id} className="product normal">
+                                <Link to={`/categories/product/${product.id}`}>
                                     <div className="product-header">
                                         <img src={product.image} alt="product1" />
                                     </div>
@@ -37,4 +37,4 @@ function CategoriesProduct() {
     )
 }
 
-export default CategoriesProduct
+export default CategoriesElectronics
