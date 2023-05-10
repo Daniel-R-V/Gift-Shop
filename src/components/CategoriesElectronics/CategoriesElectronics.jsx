@@ -1,23 +1,26 @@
 import { useState, useEffect } from "react"
 import "./categoriesElectronics.css"
-import { getAllProducts } from "../../api/getAllProducts"
 import { Link } from "react-router-dom"
 
 function CategoriesElectronics() {
-    const [products, setProducts] = useState([])
+    const API_URL = "https://fakestoreapi.com/products/category/electronics"
+    const [electronicProducts, setElectronicProducts] = useState([])
 
     useEffect(() => {
-        getAllProducts().then((response) => setProducts(response))
+        const getElectronicProducts = async () => {
+            const response = await fetch(API_URL)
+            const data = await response.json()
+            setElectronicProducts(data)
+        }
+        getElectronicProducts()
     }, [])
-
-    const filteredProducts = products.filter((product) => product.category === "electronics")
 
     return (
         <>
             <div className="product-container">
                 <div className="container">
                     <div className="products-grid">
-                        {filteredProducts.map((product) => (
+                        {electronicProducts.map((product) => (
                             <div key={product.id} className="product normal">
                                 <Link to={`/categories/product/${product.id}`}>
                                     <div className="product-header">
