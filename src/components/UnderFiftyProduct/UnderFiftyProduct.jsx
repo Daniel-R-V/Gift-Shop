@@ -12,7 +12,7 @@ function UnderFiftyProduct() {
         })
     }, [])
 
-    const underFiftyProducts = products.filter((product) => product.price < 100)
+    const underFiftyProducts = products.filter((product) => product.price < 50)
     const underFiftyProductsSorted = underFiftyProducts.sort(() => Math.random() - 0.5)
     console.log(underFiftyProducts)
 

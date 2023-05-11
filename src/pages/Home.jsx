@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import products from "../images/products.png"
 import electronics from "../images/electronics.png"
-import jewelry from "../images/jewelry.png"
+import jewels from "../images/jewels.jpg"
 import "./home.css"
 import UnderFiftySlider from "../components/UnderFiftySlider/UnderFiftySlider"
 import Banner from "../components/Banner/Banner"
@@ -20,7 +20,7 @@ function Home() {
                         <img src={electronics} alt="electronics" className="image-electronics" />
                     </Link>
                     <Link to="categories/jewelery">
-                        <img src={jewelry} alt="jewelery" className="image-jewelry" />
+                        <img src={jewels} alt="jewelery" className="image-jewelery" />
                     </Link>
                 </div>
             </div>
