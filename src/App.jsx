@@ -8,7 +8,7 @@ import Men from "./components/Categories/Men/Men"
 import Women from "./components/Categories/Women/Women"
 import Jewelery from "./components/Categories/Jewelery/Jewelery"
 import { Route, Routes } from "react-router-dom"
-import ProductPage from "./components/ProductPage/ProductPage"
+import ProductPage from "./pages/ProductPage"
 
 function App() {
     return (
