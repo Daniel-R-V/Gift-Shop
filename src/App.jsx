@@ -1,7 +1,6 @@
 import "./App.css"
 import Home from "../src/pages/Home"
 import Navbar from "./components/Navbar/Navbar.jsx"
-import Footer from "./components/Footer/Footer.jsx"
 import Categories from "./pages/Categories"
 import All from "./components/Categories/All/All"
 import Electronics from "./components/Categories/Electronics/Electronics"
@@ -27,7 +26,6 @@ function App() {
                 </Route>
                 <Route path="categories/product/:id" element={<ProductPage />} />
             </Routes>
-            <Footer />
         </div>
     )
 }

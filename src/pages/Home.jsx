@@ -6,6 +6,7 @@ import "./home.css"
 import UnderFiftySlider from "../components/UnderFiftySlider/UnderFiftySlider"
 import Banner from "../components/Banner/Banner"
 import moda from "../images/moda.jpg"
+import Footer from "../components/Footer/Footer"
 
 function Home() {
     return (
@@ -29,6 +30,7 @@ function Home() {
                 text="Our collection of high-quality clothing and accessories is designed to help you express your unique style. Discover the latest trends and timeless classics, and create a wardrobe that's truly you. Shop now and unleash your style."
                 img={moda}
             />
+            <Footer />
         </>
     )
 }
