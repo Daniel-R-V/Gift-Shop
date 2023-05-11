@@ -20,7 +20,7 @@ function UnderFiftyProduct() {
         <>
             {underFiftyProductsSorted.map((product) => (
                 <div key={product.id} className="underFiftyProducts-container">
-                    <Link onClick={() => window.top(0, 0)} to={`/categories/products/${product.id}`}>
+                    <Link onClick={() => window.top(0, 0)} to={`/categories/product/${product.id}`}>
                         <div className="product-header">
                             <img className="product-image" src={product.image} alt={`image product ${product.id}`} />
                         </div>
