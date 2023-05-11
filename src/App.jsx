@@ -7,7 +7,7 @@ import All from "./components/Categories/All/All"
 import Electronics from "./components/Categories/Electronics/Electronics"
 import Men from "./components/Categories/Men/Men"
 import Women from "./components/Categories/Women/Women"
-import Jewelry from "./components/Categories/Jewelry/Jewelry"
+import Jewelery from "./components/Categories/Jewelery/Jewelery"
 import { Route, Routes } from "react-router-dom"
 import ProductPage from "./components/ProductPage/ProductPage"
 
@@ -23,7 +23,7 @@ function App() {
                     <Route path="electronics" element={<Electronics />} />
                     <Route path="men" element={<Men />} />
                     <Route path="women" element={<Women />} />
-                    <Route path="jewelery" element={<Jewelry />} />
+                    <Route path="jewelery" element={<Jewelery />} />
                 </Route>
                 <Route path="categories/product/:id" element={<ProductPage />} />
             </Routes>

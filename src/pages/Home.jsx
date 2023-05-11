@@ -18,8 +18,8 @@ function Home() {
                     <Link to="categories/electronics">
                         <img src={electronics} alt="electronics" className="image-electronics" />
                     </Link>
-                    <Link to="categories/jewelry">
-                        <img src={jewelry} alt="jewelry" className="image-jewelry" />
+                    <Link to="categories/jewelery">
+                        <img src={jewelry} alt="jewelery" className="image-jewelry" />
                     </Link>
                 </div>
             </div>
