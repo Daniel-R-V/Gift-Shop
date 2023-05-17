@@ -19,6 +19,7 @@
     top: 8px;
     left: 50%;
     transform: translate(-50%);
+    background-color: transparent;
 }
 
 .product-left {
@@ -44,7 +45,7 @@
 .product-right {
     width: 50%;
     height: 100%;
-    background-color: #e5e5e5;
+    background-color: #f4b183;
     padding: 12rem 5rem 8rem 5rem;
 }
 
@@ -52,6 +53,7 @@
     font-size: 1.2rem;
     margin-bottom: 5rem;
     line-height: 1.5;
+    background-color: #f4b183;
 }
 
 .product-quant {
@@ -61,11 +63,16 @@
     margin-bottom: 5rem;
     font-weight: 600;
     align-items: center;
+    background-color: #f4b183;
 }
 
 .product-btns {
     display: flex;
     border: 1px solid black;
+}
+
+.quantity-title {
+    background-color: transparent;
 }
 
 .product-btns button {
@@ -77,6 +84,7 @@
     background-color: white;
     border: none;
     transition: all 0.2s;
+    background-color: #f4b183;
 }
 
 .product-btns button:first-child {
@@ -99,9 +107,14 @@
     padding-top: 10px;
 }
 
+.product-price {
+    background-color: transparent;
+}
+
 .atc-buy {
     display: flex;
     gap: 2rem;
+    background-color: #f4b183;
 }
 
 .atc-buy button {

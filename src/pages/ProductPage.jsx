@@ -49,11 +49,15 @@ function ProductPage() {
                         <div className="product-right">
                             <p className="product-spec">{product.description}</p>
                             <div className="product-quant">
-                                <p>Quantity</p>
+                                <p className="quantity-title">Quantity</p>
                                 <div className="product-btns">
-                                    <button onClick={decreaseQuantity}>-</button>
+                                    <button className="buttons-quantity" onClick={decreaseQuantity}>
+                                        -
+                                    </button>
                                     <p className="quantity">{quantity}</p>
-                                    <button onClick={increaseQuantity}>+</button>
+                                    <button className="buttons-quantity" onClick={increaseQuantity}>
+                                        +
+                                    </button>
                                 </div>
                                 <p className="product-price">{calculatePrice()}$</p>
                             </div>
