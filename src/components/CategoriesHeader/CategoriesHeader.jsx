@@ -8,6 +8,7 @@ function CategoriesHeader() {
     const handleBtnName = (e) => {
         setBtnName(e)
     }
+
     return (
         <>
             <div className="container">

@@ -24,7 +24,7 @@ function CategoriesElectronics() {
                             <div key={product.id} className="product normal">
                                 <Link to={`/categories/product/${product.id}`}>
                                     <div className="product-header">
-                                        <img src={product.image} alt="product1" />
+                                        <img className="product-image" src={product.image} alt="product1" />
                                     </div>
                                     <div className="product-details">
                                         <p>{product.title}</p>
