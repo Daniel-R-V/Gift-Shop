@@ -8,11 +8,31 @@ import Men from "./components/Categories/Men/Men"
 import Women from "./components/Categories/Women/Women"
 import Jewelery from "./components/Categories/Jewelery/Jewelery"
 import { Route, Routes } from "react-router-dom"
-import ProductPage from "./pages/ProductPage"
+import ProductPage, { CartContext } from "./pages/ProductPage"
+import { useEffect, useState } from "react"
 
 function App() {
+    const [cartProduct, setCartProduct] = useState([])
+
+    const addToCart = (product) => {
+        setCartProduct([...cartProduct, product])
+    }
+
+    useEffect(() => {
+        const valueLocalStorage = localStorage.getItem("cartProduct")
+        const savedCart = JSON.parse(valueLocalStorage)
+        if (savedCart) {
+            setCartProduct(savedCart)
+        }
+    }, [])
+
+    useEffect(() => {
+        const json = JSON.stringify(cartProduct)
+        localStorage.setItem("cartProduct", json)
+    }, [cartProduct])
+
     return (
-        <div className="app-container">
+        <CartContext.Provider value={{ cartProduct, setCartProduct, addToCart }} className="app-container">
             <Navbar />
             <Routes>
                 <Route index path="/" element={<Home />} />
@@ -26,7 +46,7 @@ function App() {
                 </Route>
                 <Route path="categories/product/:id" element={<ProductPage />} />
             </Routes>
-        </div>
+        </CartContext.Provider>
     )
 }
 

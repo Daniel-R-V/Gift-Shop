@@ -155,6 +155,25 @@
 
 /* notify */
 
+.notify {
+    background-color: black;
+    padding: 1rem 1rem 1rem 1rem;
+    font-size: 2rem;
+    position: absolute;
+    transform: translate(-50%);
+    top: -100%;
+    left: 50%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.notify.slide-in {
+    animation-duration: 4s;
+    animation-delay: -1s;
+    animation-name: slidein;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
 @keyframes slidein {
     0% {
         top: -100%;
