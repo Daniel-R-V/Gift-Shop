@@ -4,7 +4,7 @@ import "./cartProduct.css"
 
 function CartProduct() {
     const [quantity, setQuantity] = useState(1)
-    const { cartItem, setCartItem } = useContext(CartContext)
+    const { cartProduct, setCartProduct } = useContext(CartContext)
 
     const increase = () => {
         if (quantity >= 1) {
@@ -22,28 +22,28 @@ function CartProduct() {
         return quantity * item
     }
 
-    const [deleteItem, setDeleteItem] = useState(cartItem)
+    const [deleteProduct, setDeleteProduct] = useState(cartProduct)
 
     const removeFromCart = (id) => {
-        const updateCart = cartItem.filter((item) => item.id !== id)
-        setDeleteItem(updateCart)
-        const json = JSON.stringify(cartItem.id)
+        const updateCart = cartProduct.filter((product) => product.id !== id)
+        setDeleteProduct(updateCart)
+        const json = JSON.stringify(cartProduct.id)
         localStorage.removeItem("cartItem", json)
     }
 
     useEffect(() => {
-        setCartItem(deleteItem)
-    }, [deleteItem, setCartItem])
+        setCartProduct(deleteProduct)
+    }, [deleteProduct, setCartProduct])
 
     return (
         <>
-            {cartItem.map((item, id) => (
+            {cartProduct.map((product, id) => (
                 <div key={id} className="cart-item">
                     <div className="cart-img">
-                        <img src={item.img} alt="product" />
+                        <img src={product.img} alt="product" />
                     </div>
                     <div className="cart-middle">
-                        <p className="cart-name">{item.description}</p>
+                        <p className="cart-name">{product.description}</p>
                         <div className="cart-btns">
                             <button onClick={decrease}>-</button>
                             <p className="quantity">{quantity}</p>
@@ -51,8 +51,8 @@ function CartProduct() {
                         </div>
                     </div>
                     <div className="cart-right">
-                        <p className="cart-price">{calcPrice(quantity, item.price)}.00$</p>
-                        <i onClick={() => removeFromCart(item.id)} className="fa-sharp fa-solid fa-xmark"></i>
+                        <p className="cart-price">{calcPrice(quantity, product.price)}.00$</p>
+                        <i onClick={() => removeFromCart(product.id)} className="fa-sharp fa-solid fa-xmark"></i>
                     </div>
                 </div>
             ))}
