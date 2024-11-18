@@ -7,6 +7,7 @@ function CategoriesProduct() {
     const [products, setProducts] = useState([])
 
     console.log("Hello Dani!")
+    console.log("testing again!!")
 
     useEffect(() => {
         getAllProducts().then((response) => {
