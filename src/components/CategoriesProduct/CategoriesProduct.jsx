@@ -6,6 +6,8 @@ import { Link } from "react-router-dom"
 function CategoriesProduct() {
     const [products, setProducts] = useState([])
 
+    console.log("Hello Dani!")
+
     useEffect(() => {
         getAllProducts().then((response) => {
             setProducts(response)
