@@ -14,6 +14,8 @@ import { useEffect, useState } from "react"
 function App() {
     const [cartProduct, setCartProduct] = useState([])
 
+    console.log("hello dani")
+
     const addToCart = (product) => {
         setCartProduct([...cartProduct, product])
     }
